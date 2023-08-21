@@ -1,0 +1,57 @@
+[
+  {
+    "1": {
+      "0": null,
+      "key": "TEST_KEY_0",
+      "en": "Hello! I am Locale System.",
+      "zh_cn": "你好！我是地方系统。",
+      "zh_tw": "你好！我是地方系統。",
+      "ja": "こんにちは！私はローカルシステムです。",
+      "ko": "안녕하세요! 나는 로케일 시스템입니다."
+    },
+    "2": {
+      "0": null,
+      "key": "TEST_KEY_1",
+      "en": "Words For Testing.",
+      "zh_cn": "测试单词。",
+      "zh_tw": "測試單詞。",
+      "ja": "テスト用の言葉。",
+      "ko": "테스트를위한 단어."
+    },
+    "3": {
+      "0": null,
+      "key": "TEST_KEY_2",
+      "en": "How are you these days?",
+      "zh_cn": "这些天你好吗？",
+      "zh_tw": "這些天你好嗎？",
+      "ja": "お元気ですか？",
+      "ko": "요즘 어떻게 지내니?"
+    },
+    "4": {
+      "0": null,
+      "key": "TEST_KEY_3",
+      "en": "Did you eat dinner tonight?",
+      "zh_cn": "你今晚吃晚餐了吗？",
+      "zh_tw": "你今晚吃晚餐了嗎？",
+      "ja": "今夜は夕食を食べましたか？",
+      "ko": "오늘 저녁을 먹었나요?"
+    },
+    "5": {
+      "0": null,
+      "key": "TEST_KEY_4",
+      "en": "Have a good day!",
+      "zh_cn": "祝你有美好的一天！",
+      "zh_tw": "祝你有美好的一天！",
+      "ja": "良い一日を！",
+      "ko": "좋은 하루 보내세요!"
+    }
+  },
+  {
+    "Hello! I am Locale System.Words For Testing.How are you these days?Did you eat dinner tonight?Have a good day!": {
+      "zh_cn": "你好！我是地方系统。测试单词。这些天你好吗？你今晚吃晚餐了吗？祝你有美好的一天！",
+      "zh_tw": "你好！我是地方系統。測試單詞。這些天你好嗎？你今晚吃晚餐了嗎？祝你有美好的一天！",
+      "ja": "こんにちは！私はローカルシステムです。テスト用の言葉。お元気ですか？今夜は夕食を食べましたか？良い一日を！",
+      "ko": "안녕하세요! 나는 로케일 시스템입니다.테스트를위한 단어.요즘 어떻게 지내니?오늘 저녁을 먹었나요?좋은 하루 보내세요!"
+    }
+  }
+]
