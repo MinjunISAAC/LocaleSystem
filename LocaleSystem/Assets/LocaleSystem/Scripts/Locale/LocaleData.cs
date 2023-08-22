@@ -17,7 +17,7 @@ namespace LocaleSystem.ForData
     public class LocaleData
     {
         public string     key;
-        public LocaleData data;
+        public LocaleInfo data;
     }
 
     [System.Serializable]

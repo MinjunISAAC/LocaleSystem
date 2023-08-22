@@ -9,6 +9,9 @@ namespace LocaleSystem
 {
     public class LocaleUnit : MonoBehaviour
     {
-
+        // --------------------------------------------------
+        // Functions - Nomal
+        // --------------------------------------------------
+        
     }
 }

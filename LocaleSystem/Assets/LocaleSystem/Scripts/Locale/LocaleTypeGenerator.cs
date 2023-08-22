@@ -19,9 +19,9 @@ namespace LocaleSystem.Generate
         // Variables
         // --------------------------------------------------
         // ----- Const
-        private const string ENUMFILE_PATH = "Assets/JsonLoader/Scripts/";
-        private const string ENUMFILE_NAME = "LocaleType";
-        private const string ENUMFILE_BASE =
+        private const string ENUMFILE_PATH     = "Assets/LocaleSystem/Scripts/Locale/";
+        private const string ENUMFILE_NAME     = "ELocaleKey";
+        private const string ENUMFILE_KEY_BASE =
             "namespace LocaleSystem \n" +
             "{ \n" +
             "   public enum ELocaleKey\n" +
@@ -50,13 +50,14 @@ namespace LocaleSystem.Generate
             else
                 _DeleteAllLocaleDataKey();
 
+            // Locale Key ºÎºÐ
             for (int i = 0; i < localeDataSet.dataSet.Count; i++)
             {
                 var localeType = localeDataSet.dataSet[i];
                 scriptCode += ($"       " + localeType.key + $" = {i+1},\n");
             }
-            
-            scriptCode = ENUMFILE_BASE + scriptCode + "    }\n" + "}";
+            scriptCode = ENUMFILE_KEY_BASE + scriptCode + "    }\n" + "}";
+
             File.WriteAllText(filePath, scriptCode);
             AssetDatabase.Refresh();
         }
