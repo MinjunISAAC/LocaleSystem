@@ -36,7 +36,7 @@ namespace LocaleSystem.ForUI
         // --------------------------------------------------
         // Functions - Nomal
         // --------------------------------------------------
-        public void OnInit(ECountryType countryType)
+        public void OnInit(ECountryType countryType, Action doneCallBack)
         {
             _countryType = countryType;
 
@@ -52,7 +52,7 @@ namespace LocaleSystem.ForUI
                     btn.OnOffCheckImage(_countryType);
                 };
 
-                btn.SetOnClick();
+                btn.SetOnClick(doneCallBack);
                 btn.OnOffCheckImage(_countryType);
             }
         }

@@ -38,7 +38,7 @@ namespace LocaleSystem.ForUI
         // --------------------------------------------------
         // Functions - Nomal
         // --------------------------------------------------
-        public void SetOnClick(Action onClickAction = null)
+        public void SetOnClick(Action onClickAction)
         {
             _BTN_Select.onClick.AddListener(() => 
             {

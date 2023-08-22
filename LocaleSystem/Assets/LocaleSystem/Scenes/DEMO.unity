@@ -372,6 +372,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localeSelectView: {fileID: 1419950665}
+  _localeUnitSet:
+  - {fileID: 1539783627}
+  - {fileID: 837070283}
+  - {fileID: 387974981}
+  - {fileID: 609341853}
+  - {fileID: 1291385576}
+  - {fileID: 193346756}
+  - {fileID: 479768348}
+  - {fileID: 796341037}
+  - {fileID: 1280112487}
+  - {fileID: 1280752614}
+  - {fileID: 1294889701}
+  - {fileID: 1925917349}
+  - {fileID: 2043708269}
+  _fontGroup:
+  - country: 1
+    info:
+      fontAsset: {fileID: 11400000, guid: d44d40a9f549eca40b98d29cfb5a22fc, type: 2}
+      fontSize: 40
+  - country: 2
+    info:
+      fontAsset: {fileID: 11400000, guid: ff4cd4ed08cc69842a0394382fb996be, type: 2}
+      fontSize: 40
+  - country: 3
+    info:
+      fontAsset: {fileID: 11400000, guid: 2deef82ea60cb324e8d7a7098d574bd7, type: 2}
+      fontSize: 40
+  - country: 4
+    info:
+      fontAsset: {fileID: 11400000, guid: 048be3858729bfa4a8ead7ccb77a69b1, type: 2}
+      fontSize: 31
+  - country: 5
+    info:
+      fontAsset: {fileID: 11400000, guid: f72eaf4fb75bcbe45a7ba62d39ba5334, type: 2}
+      fontSize: 35
 --- !u!1 &193346752
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +418,7 @@ GameObject:
   - component: {fileID: 193346753}
   - component: {fileID: 193346755}
   - component: {fileID: 193346754}
+  - component: {fileID: 193346756}
   m_Layer: 5
   m_Name: TMP_Text_3
   m_TagString: Untagged
@@ -507,6 +543,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193346752}
   m_CullTransparentMesh: 1
+--- !u!114 &193346756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193346752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 4
+  _TMP_Text: {fileID: 193346754}
+  _localeInfo:
+    en: Did you eat dinner tonight?
+    zh_cn: "\u4F60\u4ECA\u665A\u5403\u665A\u9910\u4E86\u5417\uFF1F"
+    zh_tw: "\u4F60\u4ECA\u665A\u5403\u665A\u9910\u4E86\u55CE\uFF1F"
+    ja: "\u4ECA\u591C\u306F\u5915\u98DF\u3092\u98DF\u3079\u307E\u3057\u305F\u304B\uFF1F"
+    ko: "\uC624\uB298 \uC800\uB141\uC744 \uBA39\uC5C8\uB098\uC694?"
 --- !u!224 &228091594 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5292071229047098704, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
@@ -544,6 +600,31 @@ Transform:
   m_Father: {fileID: 2087764007}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &387974977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937914812165971754, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
+  m_PrefabInstance: {fileID: 1102145395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &387974981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387974977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!1 &479768344
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +636,7 @@ GameObject:
   - component: {fileID: 479768345}
   - component: {fileID: 479768347}
   - component: {fileID: 479768346}
+  - component: {fileID: 479768348}
   m_Layer: 5
   m_Name: TMP_Title_LocalSelect
   m_TagString: Untagged
@@ -679,6 +761,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479768344}
   m_CullTransparentMesh: 1
+--- !u!114 &479768348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479768344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!1 &490589449
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +895,31 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -1000}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &609341849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937914812165971754, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
+  m_PrefabInstance: {fileID: 1026024608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &609341853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609341849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +1057,7 @@ GameObject:
   - component: {fileID: 796341034}
   - component: {fileID: 796341036}
   - component: {fileID: 796341035}
+  - component: {fileID: 796341037}
   m_Layer: 5
   m_Name: TMP_Text_2
   m_TagString: Untagged
@@ -1054,6 +1182,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796341033}
   m_CullTransparentMesh: 1
+--- !u!114 &796341037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796341033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 3
+  _TMP_Text: {fileID: 796341035}
+  _localeInfo:
+    en: How are you these days?
+    zh_cn: "\u8FD9\u4E9B\u5929\u4F60\u597D\u5417\uFF1F"
+    zh_tw: "\u9019\u4E9B\u5929\u4F60\u597D\u55CE\uFF1F"
+    ja: "\u304A\u5143\u6C17\u3067\u3059\u304B\uFF1F"
+    ko: "\uC694\uC998 \uC5B4\uB5BB\uAC8C \uC9C0\uB0B4\uB2C8?"
+--- !u!1 &837070279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937914812165971754, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
+  m_PrefabInstance: {fileID: 2052449948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &837070283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837070279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!1 &934410930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,6 +1639,7 @@ GameObject:
   - component: {fileID: 1280112484}
   - component: {fileID: 1280112486}
   - component: {fileID: 1280112485}
+  - component: {fileID: 1280112487}
   m_Layer: 5
   m_Name: TMP_Text_0
   m_TagString: Untagged
@@ -1590,6 +1764,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280112483}
   m_CullTransparentMesh: 1
+--- !u!114 &1280112487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280112483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 1
+  _TMP_Text: {fileID: 1280112485}
+  _localeInfo:
+    en: Hello! I am Locale System.
+    zh_cn: "\u4F60\u597D\uFF01\u6211\u662F\u5730\u65B9\u7CFB\u7EDF\u3002"
+    zh_tw: "\u4F60\u597D\uFF01\u6211\u662F\u5730\u65B9\u7CFB\u7D71\u3002"
+    ja: "\u3053\u3093\u306B\u3061\u306F\uFF01\u79C1\u306F\u30ED\u30FC\u30AB\u30EB\u30B7\u30B9\u30C6\u30E0\u3067\u3059\u3002"
+    ko: "\uC548\uB155\uD558\uC138\uC694! \uB098\uB294 \uB85C\uCF00\uC77C \uC2DC\uC2A4\uD15C\uC785\uB2C8\uB2E4."
 --- !u!1 &1280752610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1795,7 @@ GameObject:
   - component: {fileID: 1280752611}
   - component: {fileID: 1280752613}
   - component: {fileID: 1280752612}
+  - component: {fileID: 1280752614}
   m_Layer: 5
   m_Name: TMP_Title_TestText
   m_TagString: Untagged
@@ -1725,6 +1920,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280752610}
   m_CullTransparentMesh: 1
+--- !u!114 &1280752614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280752610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
+--- !u!1 &1291385572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937914812165971754, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
+  m_PrefabInstance: {fileID: 72370422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1291385576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291385572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!1 &1294877977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +2014,7 @@ GameObject:
   - component: {fileID: 1294889698}
   - component: {fileID: 1294889700}
   - component: {fileID: 1294889699}
+  - component: {fileID: 1294889701}
   m_Layer: 5
   m_Name: TMP_Text_4
   m_TagString: Untagged
@@ -1898,6 +2139,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294889697}
   m_CullTransparentMesh: 1
+--- !u!114 &1294889701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294889697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 5
+  _TMP_Text: {fileID: 1294889699}
+  _localeInfo:
+    en: Have a good day!
+    zh_cn: "\u795D\u4F60\u6709\u7F8E\u597D\u7684\u4E00\u5929\uFF01"
+    zh_tw: "\u795D\u4F60\u6709\u7F8E\u597D\u7684\u4E00\u5929\uFF01"
+    ja: "\u826F\u3044\u4E00\u65E5\u3092\uFF01"
+    ko: "\uC88B\uC740 \uD558\uB8E8 \uBCF4\uB0B4\uC138\uC694!"
 --- !u!224 &1303266084 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5292071229047098704, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
@@ -1979,6 +2240,31 @@ MonoBehaviour:
   - {fileID: 1303266085}
   - {fileID: 1722535488}
   _countryType: 0
+--- !u!1 &1539783623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937914812165971754, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
+  m_PrefabInstance: {fileID: 1937914813143569435}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1539783627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539783623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!114 &1558804076 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5423200950814975478, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
@@ -2129,6 +2415,7 @@ GameObject:
   - component: {fileID: 1925917346}
   - component: {fileID: 1925917348}
   - component: {fileID: 1925917347}
+  - component: {fileID: 1925917349}
   m_Layer: 5
   m_Name: TMP_Text_1
   m_TagString: Untagged
@@ -2253,6 +2540,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925917345}
   m_CullTransparentMesh: 1
+--- !u!114 &1925917349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925917345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 2
+  _TMP_Text: {fileID: 1925917347}
+  _localeInfo:
+    en: Words For Testing.
+    zh_cn: "\u6D4B\u8BD5\u5355\u8BCD\u3002"
+    zh_tw: "\u6E2C\u8A66\u55AE\u8A5E\u3002"
+    ja: "\u30C6\u30B9\u30C8\u7528\u306E\u8A00\u8449\u3002"
+    ko: "\uD14C\uC2A4\uD2B8\uB97C\uC704\uD55C \uB2E8\uC5B4."
 --- !u!224 &1941590625 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5292071229047098704, guid: e84e47dc74c50a544ba3022f74d80d52, type: 3}
@@ -2346,6 +2653,7 @@ GameObject:
   - component: {fileID: 2043708266}
   - component: {fileID: 2043708268}
   - component: {fileID: 2043708267}
+  - component: {fileID: 2043708269}
   m_Layer: 5
   m_Name: TMP_Title
   m_TagString: Untagged
@@ -2470,6 +2778,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043708265}
   m_CullTransparentMesh: 1
+--- !u!114 &2043708269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043708265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63a2bff09a488c4a89849f34371cc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localeKey: 0
+  _TMP_Text: {fileID: 0}
+  _localeInfo:
+    en: 
+    zh_cn: 
+    zh_tw: 
+    ja: 
+    ko: 
 --- !u!1 &2043831639
 GameObject:
   m_ObjectHideFlags: 0

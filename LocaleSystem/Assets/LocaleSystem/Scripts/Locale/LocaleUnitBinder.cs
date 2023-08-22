@@ -16,8 +16,8 @@ namespace LocaleSystem
         // --------------------------------------------------
         // Functions - Nomal
         // --------------------------------------------------
-        [MenuItem("Assets/Custom Menu/Bind TextMeshProUGUI Unit")]
-        private static void BindToLocaleUnit()
+        [MenuItem("Assets/Custom Menu/Create TextMeshProUGUI Unit")]
+        public static void CreateToLocaleUnit()
         {
             TextMeshProUGUI[] tmpArray = FindObjectsOfType<TextMeshProUGUI>();
             
@@ -25,7 +25,7 @@ namespace LocaleSystem
             {
                 var tmp = tmpArray[i];
 
-                if (tmp.GetComponent<LocaleUnit>() == null)
+                if (tmp.GetComponent<LocaleUnit>() == null) 
                     tmp.gameObject.AddComponent<LocaleUnit>();
             }
         }
