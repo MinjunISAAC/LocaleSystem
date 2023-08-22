@@ -41,7 +41,6 @@ namespace JsonUtil
             }
             else
                 Debug.Log($"Locale {localeDatas.dataSet.Count} items found");
-
         }
     }
 }
