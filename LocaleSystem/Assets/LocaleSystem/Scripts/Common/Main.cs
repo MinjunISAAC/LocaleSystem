@@ -7,6 +7,7 @@ using UnityEngine;
 
 // ----- User Defined
 using JsonUtil;
+using LocaleSystem.Generate;
 
 namespace Common.Main
 {

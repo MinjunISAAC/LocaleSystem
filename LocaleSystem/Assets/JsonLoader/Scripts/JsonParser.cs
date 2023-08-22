@@ -15,14 +15,18 @@ namespace JsonUtil
         // --------------------------------------------------
         // Variables
         // --------------------------------------------------
-        private const string JsonName = "[LocalizeSystem]Sample";
+        // ----- Const
+        private const string JSONFILE_NAME = "[LocalizeSystem]Sample";
+
+        // ----- Private
+        private static LocaleDataSet _dataSet = null;
 
         // --------------------------------------------------
         // Functions - Nomal
         // --------------------------------------------------
         public static void LoadJson() 
         {
-            var loadedJsonFile = Resources.Load<TextAsset>($"JsonSet/{JsonName}");
+            var loadedJsonFile = Resources.Load<TextAsset>($"JsonSet/{JSONFILE_NAME}");
 
             if (loadedJsonFile == null)
             {
@@ -30,17 +34,21 @@ namespace JsonUtil
                 return;
             }
 
-            string jsonText = loadedJsonFile.text; // Wrap the JSON text in an object
-            
-            LocaleDataSet localeDatas = JsonUtility.FromJson<LocaleDataSet>(jsonText); // Parse JSON text
+            _dataSet = JsonUtility.FromJson<LocaleDataSet>(loadedJsonFile.text);
 
-            if (localeDatas == null)
+            if (_dataSet == null)
             {
                 Debug.LogError("<color=#FF0000>[JsonParser.LoadJson] JSON 파싱에 실패하였습니다.</color>");
                 return;
             }
-            else
-                Debug.Log($"Locale {localeDatas.dataSet.Count} items found");
+        }
+
+        public static LocaleDataSet GetLocaleDataSet() 
+        {
+            if (_dataSet == null)
+                return null;
+
+            return _dataSet;
         }
     }
 }
