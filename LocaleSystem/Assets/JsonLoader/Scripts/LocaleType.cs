@@ -1,6 +1,6 @@
 namespace LocaleSystem 
 { 
-   public enum ELocaleType
+   public enum ELocaleKey
    {
        Unknown = 0,
        TEST_KEY_0 = 1,

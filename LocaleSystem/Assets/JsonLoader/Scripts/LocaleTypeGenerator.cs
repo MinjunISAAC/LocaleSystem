@@ -13,18 +13,18 @@ using JsonUtil;
 
 namespace LocaleSystem.Generate
 {
-    public class JsonTypeGenerator : MonoBehaviour
+    public class LocaleTypeGenerator : MonoBehaviour
     {
         // --------------------------------------------------
         // Variables
         // --------------------------------------------------
         // ----- Const
         private const string ENUMFILE_PATH = "Assets/JsonLoader/Scripts/";
-        private const string ENUMFILE_NAME = "ELocaleType";
+        private const string ENUMFILE_NAME = "LocaleType";
         private const string ENUMFILE_BASE =
             "namespace LocaleSystem \n" +
             "{ \n" +
-            "   public enum ELocaleType\n" +
+            "   public enum ELocaleKey\n" +
             "   {\n" +
             "       Unknown = 0,\n";
 
@@ -34,14 +34,21 @@ namespace LocaleSystem.Generate
         [MenuItem("Assets/Custom Menu/Generate LocaleData Type Enum")]
         private static void GenerateToLocaleDataType()
         {
-            _DeleteAllLocaleDataKey();
-
-            // Json Load
+            // Json 파일 로드
             JsonParser.LoadJson();
 
             LocaleDataSet localeDataSet = JsonParser.GetLocaleDataSet();
-            string fileName = ENUMFILE_PATH + $"{ENUMFILE_NAME}.cs";
-            string scriptCode = $"";
+            string        filePath      = ENUMFILE_PATH + $"{ENUMFILE_NAME}.cs";
+            string        scriptCode    = $"";
+
+            // 파일이 존재하는지 확인
+            if (!File.Exists(filePath))
+            {
+                File.WriteAllText(filePath, scriptCode);
+                AssetDatabase.Refresh();
+            }
+            else
+                _DeleteAllLocaleDataKey();
 
             for (int i = 0; i < localeDataSet.dataSet.Count; i++)
             {
@@ -50,7 +57,7 @@ namespace LocaleSystem.Generate
             }
             
             scriptCode = ENUMFILE_BASE + scriptCode + "    }\n" + "}";
-            File.WriteAllText(fileName, scriptCode);
+            File.WriteAllText(filePath, scriptCode);
             AssetDatabase.Refresh();
         }
 
