@@ -4,7 +4,13 @@
 
 #### ⦁ Version 1.0 (2023.08.22)
 
-### 1. 조건
+### 1. 데모 이미지
+
+<p align="center">
+    <img src="./LocaleSystem/ImageGroup/Demo.gif" alt="Data Structure" width="300">
+</p>
+
+### 2. 조건
 
 - Scene 내에 있는 모든 **'TextMeshProUGUI' 컴포넌트**들에 적용될 것
       
@@ -12,7 +18,7 @@
   
 - 번역에 필요한 데이터는 **[Table]화 된 정보를 활용**할 것
 
-### 2. 메인 설계
+### 3. 메인 설계
 
 - **Data 구조 설계**
   
