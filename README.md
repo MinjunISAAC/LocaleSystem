@@ -24,7 +24,7 @@
   
   - **Data 구조**는 **JSON File을 설계할 때 활용**됨.
 
-  - **[Data Class](/LocaleSystem/ImageGroup/Locale_0.png"](https://github.com/MinjunISSAC/LocaleSystem/blob/main/LocaleSystem/Assets/LocaleSystem/Scripts/Locale/LocaleData.cs))**
+  - **[Data Class](https://github.com/MinjunISAAC/LocaleSystem/blob/main/LocaleSystem/Assets/LocaleSystem/Scripts/Locale/LocaleData.cs))**
     
   - **[JSON File](https://github.com/MinjunISSAC/LocaleSystem/blob/main/LocaleSystem/Assets/JsonLoader/Resources/JsonSet/%5BLocalizeSystem%5DSample.json)**
     
